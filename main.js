@@ -31,6 +31,12 @@ const cb = () => {
 };
 
 b1.addEventListener("click", cb);
+
+del.id = "del";
+const cbdel = () => {
+  li.remove();
+};
 del.innerText = "delete";
 
 li.appendChild(del);
+del.addEventListener("click", cbdel);
